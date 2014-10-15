@@ -1,0 +1,980 @@
+/*
+                                __          .__                
+  ____   ______ ______   _______/  |_ ___.__.|  |  __ __  ______
+_/ ___\ /  ___//  ___/  /  ___/\   __<   |  ||  | |  |  \/  ___/
+\  \___ \___ \ \___ \   \___ \  |  |  \___  ||  |_|  |  /\___ \ 
+ \___  >____  >____  > /____  > |__|  / ____||____/____//____  >
+     \/     \/     \/       \/        \/                     \/ 
+*/
+
+/* ***** FONTS ***** */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Voltaire);
+/* ***** FONTS ***** */
+
+/* ***** COLOURS ***** */
+blanco = #FFFFFF
+gris_oscuro = #333333
+negro = #000000
+/* ***** COLOURS ***** */
+
+*
+	border 0
+	margin 0
+	padding 0
+
+body 
+	font-family 'Open Sans', sans-serif
+	font-size 16px
+
+figure
+	margin 0
+	padding 0
+
+
+footer
+	background gris_oscuro
+	color blanco
+	height auto
+	padding .5em 0 .5em 0
+	text-align center
+	width 100%
+	a
+		color blanco
+		text-decoration none
+
+
+header
+	background gris_oscuro
+	height auto
+	width 100%
+	.List
+		height auto
+		padding 1em 0 1em .5em
+		width auto
+		ul li
+			list-style none
+			line-height 25px
+			a 
+				color blanco
+				font-size .9em
+				text-decoration none
+	.Redes-header
+		height auto
+		width 100%
+		ul li
+			display inline-block
+			padding .5em 0 .5em 1em
+nav
+	height auto
+	width 100%
+	ul li
+		padding .7em 0 .7em 0
+		border-bottom 1px solid gris_oscuro
+		text-align center
+		&:last-child
+			border-bottom none
+	a
+		color gris_oscuro
+		text-decoration none
+.Banners-medios
+	height auto
+	padding 1.5em 0 1em 0
+	text-align center
+	width 100%
+.Banner-top
+	height auto
+	text-align center
+	width 100%
+.Caja-alimentacion
+	margin 1em 0 2em 0
+.Caja-astrologia
+	margin 1em 0 2em 0
+.Contenedor-cols1
+	height auto
+	width 100%
+	.col1
+		height auto
+		width 100%
+		.Caja
+			padding .4em 0 .4em .4em
+			width auto
+			h3
+				color blanco
+				font-size .9em
+		img
+			height auto
+			margin -1em 0 0 0
+			max-width 420px
+			width 100%
+		p
+			background red
+			color blanco
+			height auto
+			font-size .9em
+			line-height 25px
+			margin -.5em 0 0 0
+			padding .7em .5em .7em .5em
+		a
+			color red
+			font-size .9em
+			text-decoration none
+			padding .5em 0 0 .5em
+	.Set-banners
+		margin 2em 0 0 0
+	.col2
+		height auto
+		margin 1em 0 1em 0
+		width 100%
+		img
+			height auto
+			width 100%
+	.col2
+		height auto
+		width 100%
+		.Caja
+			padding .4em 0 .4em .4em
+			width auto
+			h3
+				color blanco
+				font-size .9em
+		img
+			height auto
+			margin -1em 0 0 0
+			max-width 420px
+			width 100%
+		a
+			color red
+			font-size .9em
+			text-decoration none
+			padding .5em 0 0 .5em
+	.Cuadrados
+		h3
+			font-size 1em
+			margin .3em 0 .5em .5em
+		p
+			font-size .9em
+			margin .3em .5em 2em .5em
+			line-height 25px
+	.col3
+		.Caja
+			color blanco
+			height auto
+			font-size .8em
+			padding .5em 0 .5em .5em
+			width auto
+		p
+			color gris_oscuro
+			font-size .9em
+			line-height 20px
+		a
+			color red
+			font-size .8em
+			text-decoration none
+	.col4
+		.Caja
+			color blanco
+			font-size .8em
+			padding .5em 0 .5em 1em
+			width auto
+	.Redes-sidebar
+		ul li
+			margin 0 1.5em 0 1.5em
+	.col2b
+		height auto
+		width 100%
+	.col3
+		height auto
+		width 100%
+		img
+			float left
+			padding-bottom 2em
+			padding-right .7em	
+	.Caja
+		background red
+		height auto
+		margin 2em 0 1em 0
+		width 100%
+.Contenedor-principal
+	height auto
+	margin 0 auto
+	width 95%
+.Clear
+	clear both
+.Contenedor-cols2
+	height auto
+	margin 2em 0 2em 0
+	width 100%
+	h3
+		color blanco
+		background red
+		font-size .9em
+		padding .5em 0 .5em .5em
+	p
+		color gris_oscuro
+		font-size .9em
+		line-height 23px
+	a
+		color red
+		font-size .8em
+		text-decoration none
+	.col2a
+		height auto
+		margin 1em 0 1em 0
+		width 100%
+		img
+			float left
+			margin 0 .7em 0 0
+	.col2b
+		height auto
+		width 100%
+		img
+			float left
+			margin 0 .7em 2em 0
+.Contenedor-cols3
+	height auto
+	margin 0
+	padding 0
+	width 100%
+	.col3a
+		height auto
+		width 100%
+		a
+			color red
+			text-decoration none
+			margin 0 0 0 .5em
+		h2
+			font-size .9em
+			padding .5em 0 .5em .5em
+		h3
+			background red
+			color blanco
+			font-size .9em
+			padding .5em 0 .5em .5em
+		img
+			height auto
+			width 100%
+		p
+			color gris_oscuro
+			font-size .9em
+			line-height 23px
+			margin .5em .5em 1.5em .5em
+	.col3b
+		height auto
+		margin 1em 0 1em 0
+		width 100%
+		a
+			color red
+			font-size .8em
+			text-decoration none
+		p
+			color gris_oscuro
+			font-size .9em
+			line-height 23px
+		img
+			float left
+			margin 0 1em 2em 0
+.Contenedor-cols4
+	height auto
+	width 100%
+	.col4a
+		a
+			color red
+			font-size .8em
+			text-decoration none
+			padding 0 0 0 .5em
+		h2
+			font-size 1em
+			padding .5em 0 .5em .3em
+		h3
+			color blanco
+			background red
+			font-size .9em
+			padding .5em  0 .5em .5em
+		img
+			height auto
+			width 100%
+		p
+			color gris_oscuro
+			font-size .9em
+			line-height 23px
+			margin .5em 1em 1.5em .5em
+	.col3b
+		height auto
+		margin 1.5em 0 1em 0
+		width 100%
+		a
+			color red
+			font-size .8em
+			text-decoration none
+		img
+			float left
+			margin 0 1em 2em 0
+		p
+			color gris_oscuro
+			font-size .9em
+			line-height 23px
+.Contenedor-cols5
+	height auto
+	margin 2em 0 1em 0
+	width 100%
+	.col5a
+		height auto
+		margin 0 0 2em 0
+		width 100%
+		a
+			color red
+			font-size .8em
+			text-decoration none
+		h2
+			font-size 1em
+			padding .5em 0 0 0
+		h3
+			background red
+			font-size 1em
+			padding .5em 0 .5em .5em
+			color blanco
+		p
+			color gris_oscuro
+			font-size .9em
+			padding .5em .5em 1em 0
+			line-height 24px
+		img
+			height auto
+			width 100%
+	.col5b
+		height auto
+		width 100%
+		a
+			color red
+			font-size .8em
+			text-decoration none
+		img
+			float left
+			margin 0 1em 1em 0
+		p
+			color gris_oscuro
+			font-size .9em
+			line-height 23px
+.Redes-sidebar
+	height auto
+	width 100%
+	ul li
+		display inline-block
+		margin 0 1.2em 0 3em
+.Sub-header
+	height auto
+	margin 1em 0 .5em 0
+	width 100%
+	img
+		height auto
+		width 100%
+	.Logo
+		margin 0 0 1em 0
+/* *************** 480px ************** */
+@media screen and (min-width: 480px)
+	footer
+		background gris_oscuro
+		height auto
+		padding .5em 0 .5em 0
+		width 100%
+	header
+		background gris_oscuro
+	nav
+		background blanco
+		height auto
+		text-align center
+		width 100%
+		ul li
+			list-style none
+	.Contenedor-cols3
+		height auto
+		width 100%
+		.col3a
+			height auto
+			margin 0 0 2em 0
+			width 100%
+			img
+				height auto
+				float left
+				margin 0 1em 0 0
+				max-width 332px
+				width 100%
+	.Contenedor-cols4
+		height auto
+		width 100%
+		.col4a
+			height auto
+			width 100%
+			img
+				height auto
+				float left
+				max-width 332px
+				margin 0 1em 0 0
+				width 100%
+			.Caja
+				margin 1em 0 1em 0
+	.Contenedor-cols5
+		height auto
+		width 100%
+		.col5a
+			height auto
+			width 100%
+			img
+				height auto
+				float left
+				margin 0 1em 0 0
+				max-width 332px
+				width 100%
+		.Caja
+			margin 1em 0 1em 0	
+	.Contenedor-cols1
+		height auto
+		margin 0
+		padding 0
+		width 100%
+		.col1 
+			height auto
+			margin 0 auto
+			text-align center
+			width auto
+			img
+				height auto
+				margin-bottom .5em
+				width 100%
+		.col2
+			height auto
+			margin 0 auto
+			text-align center
+			width auto
+			img
+				height auto
+				margin-bottom .5em
+				width 100%
+		.col4 .Redes-sidebar
+			background right 
+			ul li
+				margin 0 1.5em 0 2em
+	.Contenedor-cols3
+		height auto
+		width 100%
+		.col3a
+			height auto
+			text-align center
+			width 100%
+			img
+				height auto
+				float none
+				width 100%	
+	.Contenedor-cols4
+		height auto
+		width 100%
+		.col4a
+			height auto
+			text-align center
+			width 100%
+			img
+				height auto
+				float none
+				width 100%
+	.Contenedor-cols5
+		height auto
+		width 100%
+		.col5a
+			height auto
+			text-align center
+			width 100%
+			img
+				height auto
+				float none
+				width 100%
+	.Contenedor-principal
+		height auto
+		margin 0 auto
+		padding 0
+		width 99%
+/* ***************** 767 **************** */
+@media screen and (min-width: 767px)
+	footer
+		color blanco
+		height auto
+		padding 1em 0 1em 1em
+		width auto
+		a
+			color blanco
+			text-decoration none
+		a:hover
+			text-decoration underline
+	header
+		height auto
+		width 100%
+		.List,.Redes-header
+			display inline-block
+			vertical-align middle
+		.List
+			margin-bottom .3em 
+			padding .5em 0 .5em 0
+			width 100%
+			ul li
+				display inline-block
+				margin 0 0 0 .5em
+				a 
+					color blanco
+					font-size .8em
+					text-decoration none
+		.Contenedor-principal
+			height auto
+			width 100%
+		.Redes-header
+			height auto
+			padding .3em 0 .3em 0
+			width 100%
+			ul li 
+				list-style none
+				display inline-block
+				padding .5em 0 .5em 1em
+
+	nav
+		height auto
+		padding .5em 0 .5em 0
+		width 100%
+		ul li
+			border-bottom none
+			font-size .8em
+			display inline-block
+			margin 0 2em 0 2em
+			a
+				color gris_oscuro
+	.Contenedor-principal
+		height auto
+		width 100%
+	.Contenedor-cols1
+		height auto
+		margin 0
+		padding 0
+		text-align center
+		width 100%
+		.col1,.col2
+			display inline-block
+			vertical-align top
+		.col1 
+			height auto
+			text-align left
+			margin 0
+			margin-right 1em
+			padding 0
+			width 50%
+		.col2
+			height auto
+			text-align left
+			margin 0
+			padding 0
+			width 35%
+		.col3,.col4
+			display inline-block
+			vertical-align top
+		.col3
+			height auto
+			text-align left
+			margin 0
+			margin-top 2em
+			padding 0
+			width 35%
+		.col4
+			height auto
+			text-align left
+			margin 0
+			margin-top 2em
+			margin-left 1em
+			padding 0
+			width 50%
+
+	.Contenedor-cols2
+		height auto
+		width 100%
+		.col2a
+			.Caja-alimentacion,.Caja-astrologia
+				padding 0 0 0 1em
+		.col2b
+			height auto
+			padding 0 0 0 1em
+			width auto
+
+	.Contenedor-cols3
+		.col3a
+			text-align left
+			img
+				float left
+		.col3b
+			height auto
+			padding 1em
+			width auto
+
+	.Contenedor-cols4
+		.col4a
+			text-align left
+			img
+				float left
+		.col3b
+			height auto
+			padding 0 0 0 1em
+			width auto
+
+	.Contenedor-cols5
+		.col5a
+			text-align left
+			img
+				float left
+		.col5b
+			height auto
+			padding 0 0 0 1em
+			width auto
+	.Sub-header
+		height auto
+		width 100%
+		.Logo,.Banner
+			display inline-block
+			vertical-align middle
+		.Banner
+			height auto
+			width 60%	
+		.Logo
+			margin 0 1em 0 1em
+
+/* ***********************  950px ********************** */			
+					
+@media screen and (min-width: 950px)
+	footer
+		font-size 1.1em
+		font-weight 100
+		color blanco
+		padding 1em 0 1em 1em
+		text-align left
+		width auto
+		a
+			color blanco
+			text-decoration none
+	header
+		background gris_oscuro
+		height auto
+		margin 0
+		width 100%
+		.List,.Redes-header
+			display inline-block
+			vertical-align middle
+		.List
+			height auto
+			font-size .9em
+			font-weight 100
+			width 85%
+			ul li
+				display inline-block
+				list-style none
+				margin .5em 0 0 1em
+				a
+					color blanco
+					font-size .8em
+					text-decoration none
+		.Redes-header
+			height auto
+			width 13%
+			ul li
+				display inline-block
+				list-style none
+
+	.Barra
+		background blanco
+		height auto
+		border-bottom solid 1px gris_oscuro
+		border-top solid 1px gris_oscuro
+		width 100%
+		ul li 
+			border-bottom none
+			margin 0
+			padding .5em 2em .5em 2em
+			a
+				color gris_oscuro
+	.Contenedor-cols1
+		height auto
+		margin 0px
+		padding 0px
+		width 100%
+		.col1,.col2,.col3,.col4
+			display inline-block
+			margin 0 
+			padding 0
+			margin-left .3em
+			vertical-align top
+			width 20%
+		.col1
+			margin-left 0
+			width 30%
+		.col3
+			height auto
+			width 21%
+			.Caja
+				margin 0
+				margin-bottom .5em
+				margin-top 2.5em
+				padding 0
+				padding .5em
+		.col4
+			height auto
+			width 25%
+			.Caja
+				margin 0
+				margin-bottom .5em
+				margin-top 2.5em
+				padding 0
+				padding .5em
+			img
+				height auto
+				width 100%
+			.Redes-sidebar
+				ul li
+					margin 1em 1.5em 0 .5em
+					padding 0
+	.Contenedor-cols2
+		height auto
+		margin 0
+		padding 0
+		text-align center
+		width 100%
+		.col2a,.col2b,.col2c
+			display inline-block
+			height auto
+			margin 0
+			padding 0
+			text-align left
+			vertical-align top
+			width 30%
+		.col2a
+			height auto
+			margin-left 0
+			margin-right 1em
+			width 40%
+		.col2b
+			height auto
+			margin-right .7em
+			width 25%
+	.Contenedor-cols3
+		height auto
+		width 100%
+		.col3a,.col3b,.col3c
+			display inline-block
+			vertical-align top
+		.col3a
+			height auto
+			margin 0 .7em 0 .5em
+			width 40%
+		.col3b
+			height auto
+			margin 0 .7em 0 .5em
+			width 27%
+		.col3c
+			height auto
+			margin 0 .7em 0 .5em
+			width 25%
+	.Contenedor-cols4
+		height auto
+		width 100%
+		.col4a,.col3b,.col3c
+			display inline-block
+			vertical-align top
+		.col4a
+			height auto
+			margin 0 .7em 0 .5em
+			width 40%
+		.col3b
+			height auto
+			margin 0 .7em 0 .5em
+			width 29%
+		.col3c
+			height auto
+			margin 0 .7em 0 .5em
+			width 25%
+	.Contenedor-cols5
+		height auto
+		width 100%
+		.col5a,.col5b,.col5c
+			display inline-block
+			vertical-align top
+		.col5a
+			height auto
+			margin 0 .7em 0 .5em
+			width 40%
+		.col5b
+			height auto
+			margin 0 0 0 0
+			width 29%
+		.col5c
+			height auto
+			margin 0 .7em 0 .5em
+			width 25%	
+	.Contenedor-principal
+		height auto
+		margin 0
+		padding 0
+		width 100%
+	.Sub-header
+		height auto
+		margin 1em 0 1em 0
+		width 100%
+		.Logo,.Banner
+			display inline-block
+			vertical-align: middle
+		.Logo
+			height auto
+			margin 0 0 0 3em
+			max-width 260px
+			width 100%
+		.Banner
+			height auto
+			margin 0 0 0 15em
+			max-width 690px
+			width 100%
+
+	.Noticia-principal
+		height auto
+		width 100%
+		p
+			color blanco
+			background red
+			font-size .9em
+			line-height 23px
+			padding 1em 0 1em .3em
+	.Contenedor-cols2
+		margin 2em 0 0 0
+		.col2a
+			a
+				font-size .9em
+				text-decoration none
+			p
+				color gris_oscuro
+			.Caja-label
+				h2
+					background red
+					font-size 1.1em
+					margin 0 0 2em 0
+	.Contenedor-cols3
+		margin .5em 0 1.5em 0
+	.Contenedor-cols4
+		margin-top -1em
+		.col4a
+			.Caja
+				background red
+				height auto
+				padding .5em 0 .5em 0
+				width 80%
+				h3
+					color blanco
+					font-size .9em
+					padding 0 0 0 1em
+			h2
+				font-size 1.1em
+			p
+				color gris_oscuro
+				font-size .9em
+				line-height 22px
+			a
+				color red
+				font-size .9em
+				text-decoration none
+		.col3b
+			padding 1em 0 0 0
+			p
+				color gris_oscuro
+				font-size .9em
+				line-height 23px
+			a
+				color red
+				font-size .9em
+				text-decoration none
+	.Contenedor-cols5
+		margin .5em 0 0 0
+		.col5a
+			.Caja
+				background red
+				height auto
+				padding .5em 0 .5em 0
+				width 80%
+				h3
+					color blanco
+					font-size .9em
+					padding 0 0 0 1em
+			h2
+				font-size 1.1em
+			p
+				color gris_oscuro
+				font-size .9em
+				line-height 22px
+			a
+				color red
+				font-size .9em
+				text-decoration none
+		.col5b
+			margin-top .5em
+			p
+				color gris_oscuro
+				font-size .9em
+				line-height 23px
+			a
+				color red
+				font-size .9em
+				text-decoration none
+	.Contenedor-cols3
+		.col3a
+			.Caja
+				background red
+				height auto
+				padding .5em 0 .5em 0
+				width 80%
+				h3
+					color blanco
+					font-size .9em
+					padding 0 0 0 1em
+			h2
+				font-size 1.1em
+			p
+				color gris_oscuro
+				font-size .9em
+				line-height 22px
+			a
+				color red
+				font-size .9em
+				text-decoration none
+		.col3b
+			p
+				color gris_oscuro
+				font-size .9em
+				line-height 23px
+			a
+				font-size .9em
+				color red
+				text-decoration none				
+	.Contenedor-cols2
+		.col2a
+			.Caja-label
+				background red
+				height auto
+				padding .5em 0 .5em 0
+				width 80%
+				a
+					color blanco
+				h3
+					color blanco
+					font-size .9em
+					padding 0 0 0 1em
+			a
+				color red
+				font-size .9em
+				text-decoration none
+		.col2b
+			p
+				color gris_oscuro
+				font-size .9em
+				line-height 23px
+			a
+				color red
+				font-size .9em
+				text-decoration none
