@@ -1,0 +1,11 @@
+/*
+Theme Name: Convivir Press - Versión digital del periodico Convivir
+Description: Sitio creado en exclusivo www.convivirpress.com
+Author: Fernando Manuel Bayley
+Author URI: https://twitter.com.ar/2dospunto
+Version: 1.0.0
+*/
+
+@import url('../convivir-pressword/css/normalize.css');
+@import url('../convivir-pressword/css/estilos.css');
+@import url('../convivir-pressword/css/responsivemobilemenu.css');
